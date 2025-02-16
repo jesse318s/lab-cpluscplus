@@ -39,7 +39,7 @@ int Heap::left(int index) { return (2 * index + 1); }
 
 int Heap::right(int index) { return (2 * index + 2); }
 
-Heap::Heap(bool isMax) : isMaxHeap(isMax), data() {}
+Heap::Heap(bool isMax) : data(), isMaxHeap(isMax) {}
 
 void Heap::insert(int value)
 {
